@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-style: normal;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+main {
+    padding: 0px 16px 0px 16px;
+}
+main, header, footer {
+    width: 375px;
+}
+img {
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+/* Specific styling */
+
+[alt=image_hero]{
+    padding: 0;
+}
+
+ /* first section
+ ////////////////////////////////////////// */
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    color: #151515;
+    margin: 32px 0;
+}
+.caption {
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;    
+    color: #444444;
+}
+
+#button p {
+    font-family: 'Big Shoulders Display';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;  
+    letter-spacing: 3.63636px;    
+    width: 204px;
+    height: 72px;
+    color: white;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[alt=arrow_right]{
+    width: 56px;
+    height: 72px;
+    background-color: #D5966C;
+    padding: 24px;
+}
+#button {
+    display: flex;
+    cursor: pointer;
+    margin: 32px 0px 120px 0px;
+}
+#button:hover [alt=arrow_right]{
+    background-color: #151515;
+}
+#button:hover p {
+    background-color: #d5966c;
+}
+
+/* styling gallery section 
+///////////////////////////////////
+/////////////////////////////////// */
+
+#gallery {
+    display: grid;
+    row-gap: 16px;
+}
+h2{
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px; 
+    text-transform: uppercase;
+
+}
+#first_article h2{
+    margin: 9px 0px 21px 0px;
+}
+#first_article p{
+    margin-bottom: 16px;
+}
+ 
+#second_article {
+   background-color: #151515; 
+   padding: 48px 24px 47px 24px;
+}
+#second_article h2{
+    color: white;
+    margin-bottom: 24px;
+
+}
+#second_article p{
+    color: white;
+}
+
+/* styling footer element 
+////////////////////////
+//////////////////////// */
+ 
+
+footer {
+    height: 336px;
+    padding: 48px 32px;
+    background-color: #151515;
+    margin-top: 120px;
+}
+
+[alt=light_logo]{
+    width: 110.05;
+}
+footer p{
+    margin: 38px 0;
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;    
+}
+#soc_media{
+    display: flex; 
+}
+#soc_media img{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#soc_media img:hover{
+    filter: invert(59%) sepia(66%) saturate(282%) hue-rotate(341deg) brightness(97%) contrast(88%);
+}
+
