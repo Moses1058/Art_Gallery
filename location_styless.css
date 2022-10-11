@@ -21,6 +21,9 @@ img {
 a{
     text-decoration: none;
 }
+#location_tablet, #location_desktop {
+    display: none;
+}
 #button p {
     font-family: 'Big Shoulders Display';
     font-weight: 800;
@@ -103,7 +106,7 @@ footer {
 }
 
 [alt=dark_logo]{
-    width: 110.05;
+    height: 40px;
 }
 footer p{
     margin: 38px 0;
@@ -113,15 +116,150 @@ footer p{
     line-height: 26px;
     color: #151515;    
 }
-#soc_media{
+/* #soc_media{
     display: flex; 
 }
 #soc_media img{
     cursor: pointer;
     margin-right: 20px;
     filter: invert(1);
+} */
+#soc_media{
+    display: inline-block; 
+    width: 108px;;
+}
+#soc_media img{
+    cursor: pointer;
+    display: inline-block;
+    filter: invert(1);
+}
+[alt=instagram_icon]{
+    margin: 0px 20px 0px 20px;
 }
 
 #soc_media img:hover{
     filter: invert(59%) sepia(66%) saturate(282%) hue-rotate(341deg) brightness(97%) contrast(88%);
+}
+
+
+/* Styling for Tablet devices
+----------------------------------------
+----------------------------------------
+---------------------------------------- */
+@media only screen and (min-width: 768px)  {
+
+main, footer {
+    width: 768px;
+}
+#location_mobile {
+    display: none;
+}
+#location_tablet {
+    display: block;
+}
+.back_button {
+    left: 35px;
+}
+h2 {
+    font-size: 55px;
+    line-height: 50px;
+    display: inline-block;
+    width: 223px;
+    height: 100px;
+    position: relative;
+    bottom: 168px;
+    margin-right: 68px;
+}
+h3{
+    margin: 0;
+}
+section {
+    padding: 88px 40px 80px 39px;
+}
+section div{
+    display: inline-block;
+    width: 394px;
+}
+
+/* styling footer 
+////////////////
+//////////////// */
+footer {
+    width: 689px;
+    height: 104px;
+    padding: 56px 40px 45px 39px;
+    box-sizing: content-box;
+    display: flex
+}
+footer p{
+    width: 281px;
+    display: inline-block;
+    margin: 0px 120px 0px 64.5px;
+}
+
+}
+
+/* 
+----------------------------
+styling for desktop 
+---------------------------- */
+
+@media only screen and (min-width: 1440px) {
+
+     #location_tablet{
+        display: none;
+     }
+
+     #location_desktop {
+        display: block;
+     }
+     main, footer {
+        width: 1440px;
+     }
+     .back_button {
+        left: 156px;
+     }
+
+     section {
+        padding: 104px 165px 128px 165px;
+     }
+     h2 {
+        font-size: 70px;
+        line-height: 70px;
+        width: 350px;
+        height: 140px; 
+        margin-right: 216px; 
+        bottom: 163px; 
+     }
+     h3 {
+        font-size: 36px;
+        line-height: 36px;  
+     }
+     section p {
+        font-size: 22px;
+        line-height: 32px;   
+     }
+     section div {
+        width: 540px;
+     }
+
+     /* styling footer 
+     ///////////////////
+     /////////////////// */
+     footer {
+        height: 164px;
+        margin: 0;
+        padding: 80px 0px 0px 0px;
+        justify-content: flex-start;
+    }
+    [alt=dark_logo] {
+        height: 58px;
+        margin: 0px 140.43px 0px 165px;
+    }
+    footer p {
+        font-size: 18px;
+        line-height: 28px;    
+        width: 430px;
+        margin: 0px 280px 0px 0px;
+    }
 }

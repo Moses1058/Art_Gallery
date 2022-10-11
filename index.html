@@ -12,41 +12,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div id="all">
     <header>
+        <div id="rect"></div>
         <picture>
             <source media="(min-width:1440px)" srcset="./assets/desktop/image-hero@2x.jpg">
             <source media="(min-width:768px)" srcset="./assets/tablet/image-hero@2x.jpg">
-            <img src="./assets/mobile/image-hero@2x.jpg" alt="image_hero" style="width:auto;">
+            <img src="./assets/mobile/image-hero@2x.jpg" alt="image_hero" >
         </picture>
     </header>
     <main>
-        <section>
+        <div id="main_info">
             <h1>MODERN <br>ART GALLERY</h1>
             <p class="caption">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
             <a href="./location.html"><div id="button">
                 <p>OUR LOCATION</p>
                 <img src="./assets/icon-arrow-right.svg" alt="arrow_right">
             </div></a>
-        </section>
+        </div>
         <section id="gallery">
-            <picture>
+            <picture id="grid_1">
                 <source media="(min-width:1440px)" srcset="./assets/desktop/image-grid-1@2x.jpg">
                 <source media="(min-width:768px)" srcset="./assets/tablet/image-grid-1@2x.jpg">
-                <img src="./assets/mobile/image-grid-1@2x.jpg" alt="image_grid_1" style="width:auto;">
+                <img src="./assets/mobile/image-grid-1@2x.jpg" alt="image_grid_1">
             </picture>
             <article id="first_article">
-                <h2>Your Day <br>at the Gallery</h2>
+                <h2>Your Day at the Gallery</h2>
                 <p class="caption">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
             </article>
-            <picture>
+            <picture id="grid_2">
                 <source media="(min-width:1440px)" srcset="./assets/desktop/image-grid-2@2x.jpg">
                 <source media="(min-width:768px)" srcset="./assets/tablet/image-grid-2@2x.jpg">
-                <img src="./assets/mobile/image-grid-2@2x.jpg" alt="image_grid_2" style="width:auto;">
+                <img src="./assets/mobile/image-grid-2@2x.jpg" alt="image_grid_2" >
             </picture>
-            <picture>
+            <picture id="grid_3">
                 <source media="(min-width:1440px)" srcset="./assets/desktop/image-grid-3@2x.jpg">
                 <source media="(min-width:768px)" srcset="./assets/tablet/image-grid-3@2x.jpg">
-                <img src="./assets/mobile/image-grid-3@2x.jpg" alt="image_grid_3" style="width:auto;">
+                <img src="./assets/mobile/image-grid-3@2x.jpg" alt="image_grid_3">
             </picture>
             <article id="second_article">
                 <h2>COME & BE <br>INSPIRED</h2>
@@ -54,14 +56,15 @@
             </article>
         </section>
     </main>
+</div>
     <footer>
         <img src="./assets/logo-light.svg" alt="light_logo">
         <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
         <div id="soc_media">
-            <img class="icon" src="./assets/icon-facebook.svg" alt="facebook icon">
-            <img class="icon" src="./assets/icon-instagram.svg" alt="instagram icon">
-            <img class="icon" src="./assets/icon-twitter.svg" alt="twitter icon">
+            <img class="icon" src="./assets/icon-facebook.svg" alt="facebook_icon">
+            <img class="icon" src="./assets/icon-instagram.svg" alt="instagram_icon">
+            <img class="icon" src="./assets/icon-twitter.svg" alt="twitter_icon">
         </div>
     </footer>
-  </body>
+  </body>   
 </html>
